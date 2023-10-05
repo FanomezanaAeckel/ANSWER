@@ -1,0 +1,52 @@
+// ------------------------------------------- INITIALISATION VARIABLES --------------------------------------
+$white-color:#ffffff;
+$lightpink-color:#F2CEF2;
+$lightgrey-color:#9E91B7 ;
+$darkpink-color:#DF99F2;
+$darkpurple-color:#3D2DA6;
+$darkblue-color:#07338C;
+$mediumblack-color:#021740;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $white-color;
+    text-align: justify;
+}
+body{
+    font-size: 30px;
+    background-image: radial-gradient(#021740 5%,#150938 50%,#160e27 70%, );
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+        text-decoration: underline;
+        color: $darkblue-color;
+    }
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+input{
+    width:  520px;
+    height: 56px;
+   border-radius: 38px;
+   text-align: center;
+}
+button{
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    text-align: center
+}
+textarea{
+    @extend input;
+    height: 150px;
+}

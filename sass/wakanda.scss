@@ -1,0 +1,66 @@
+@import "./lib/All/init.scss";
+@import  './lib/All/font.scss';
+@import './lib/All/Footer.scss';
+@import './lib/All/nav.scss';
+// --------------------------------------------- VISUALISE SECTION ----------------------------------------------------
+
+#ViewSection{
+    width: 100%;
+    height: 100vh;
+    background-image:url(/Illustration-Logo/2_Wakanda_page/Pantherwakanda1.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    #Intern{
+        width: 55%;
+        height: 45%;
+        margin: 0 2em;
+        #idWakanda{
+             font-family: 'wakandaforever';
+             width: 70%;
+             font-size: 40px;
+             margin-bottom: 1em;
+         }
+         p{
+             font-size: 14px;
+             width: 70%;
+         }
+        }
+    }
+// ----------------------------------------------------- STORY SECTION -----------------------------------------
+
+#containerPrinc{
+    padding: 2em 0;
+}
+.principale{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    gap: 2em;
+    padding:0 2em;
+    section{
+        width: 50%;
+    }
+}   
+.articlewakanda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2{
+        font-size: 20px;
+        line-height: 2;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+.principale:nth-child(1){
+    background-image:url(/Illustration-Logo/2_Wakanda_page/Pantherwakanda2.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}

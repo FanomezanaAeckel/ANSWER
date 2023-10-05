@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'BEYNO'  ;
+    src: url("/police/BEYNO.ttf");
+}
+@font-face {
+    font-family: 'Cantarell';
+    src: url("/police/Cantarell-Regular.ttf");
+}
+@font-face {
+    font-family:'Panthera' ;
+    src: url("/police/panthera.otf");
+}
+@font-face {
+    font-family:'wakandaforever' ;
+    src: url("/police/wakandaforever-regular.ttf");
+}
+h1{
+    font-size: 68px;
+    font-family: 'Panthera';
+    color: $lightpink-color;
+}
+h2{
+    font-size: 32px;
+    font-family: 'BEYNO';
+    color: $darkpink-color;
+}
+p , footer{
+    font-family: 'Cantarell';
+}
+p{
+    font-size: 14px;
+}
+footer{
+    font-size: 10px;
+}

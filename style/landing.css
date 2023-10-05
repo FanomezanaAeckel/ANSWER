@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-align: justify;
+}
+
+body {
+  font-size: 30px;
+  background-image: radial-gradient(#021740 5%, #150938 50%, #160e27 70%);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+  color: #07338C;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 520px;
+  height: 56px;
+  border-radius: 38px;
+  text-align: center;
+}
+
+button {
+  width: 174px;
+  height: 54px;
+  border-radius: 38px;
+  text-align: center;
+}
+
+textarea {
+  height: 150px;
+}
+
+@font-face {
+  font-family: "BEYNO";
+  src: url("/police/BEYNO.ttf");
+}
+@font-face {
+  font-family: "Cantarell";
+  src: url("/police/Cantarell-Regular.ttf");
+}
+@font-face {
+  font-family: "Panthera";
+  src: url("/police/panthera.otf");
+}
+@font-face {
+  font-family: "wakandaforever";
+  src: url("/police/wakandaforever-regular.ttf");
+}
+h1 {
+  font-size: 68px;
+  font-family: "Panthera";
+  color: #F2CEF2;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "BEYNO";
+  color: #DF99F2;
+}
+
+p, footer {
+  font-family: "Cantarell";
+}
+
+p {
+  font-size: 14px;
+}
+
+footer {
+  font-size: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(180deg, #3D2DA6, #021740);
+  font-size: 10px;
+}
+footer h2 {
+  letter-spacing: 28%;
+  font-size: 22px;
+  line-height: 2;
+}
+footer #logofooter {
+  background-image: url(/Illustration-Logo/Group\ 2052.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+footer section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space- space-around;
+  gap: 4em;
+}
+footer section:nth-child(2) section {
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  font-size: small;
+}
+
+#resFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+}
+#resFooter a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#resFooter a img {
+  width: 70%;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 18vh;
+  font-family: "BEYNO";
+  border: transparent;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  font-size: large;
+  width: 25%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#firstView {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#firstView section:nth-child(2) {
+  overflow-x: hidden;
+  background-color: #021740;
+  width: 450vw;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+#firstView section:nth-child(2) button {
+  position: absolute;
+  right: 0;
+  padding: 0;
+  width: 3%;
+  border-radius: 100%;
+  background-color: #07338C;
+  color: #021740;
+  font-size: larger;
+  transform: translate(0, 115px);
+}
+#firstView section:nth-child(2) .Imgslider {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  height: 100%;
+}
+#firstView section:nth-child(2) .Imgslider img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+#firstView section:nth-child(2) .Imgslider .DescriptionPersonnage {
+  width: 100%;
+  padding: 1em 0.8em 0;
+}
+#firstView section:nth-child(2) .Imgslider .DescriptionPersonnage p, #firstView section:nth-child(2) .Imgslider .DescriptionPersonnage span {
+  font-size: 12px;
+  text-align: justify;
+  color: #ffffff;
+  font-weight: light;
+}
+#firstView section:nth-child(2) .Imgslider .DescriptionPersonnage h2 {
+  font-weight: light;
+  text-align: left;
+}
+
+#overview {
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+#overview #annonce {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 1em;
+  padding-left: 5%;
+}
+#overview #imgView {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#overview #imgView img {
+  width: 100%;
+  height: 100%;
+}
+
+#story {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  width: 80%;
+  padding: 10% 0;
+  height: max-content;
+  gap: 3em;
+}
+
+#storyofpanther {
+  width: 80%;
+}
+#storyofpanther .articlewakanda {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#storyofpanther .articlewakanda h2 {
+  font-size: 16px;
+  line-height: 2;
+}
+#storyofpanther .articlewakanda p {
+  font-size: 14px;
+}
+
+#entityboseman {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#entityboseman #pseudo {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 0 12% 25%;
+}
+#entityboseman #pseudo p {
+  font-size: 14px;
+  font-family: "Cantarell";
+  line-height: 1.5;
+  color: #021740;
+}
+#entityboseman #pseudo img {
+  width: 374px;
+  height: 527 px;
+}
+#entityboseman #pseudo img:hover {
+  width: 450px;
+  height: 634px;
+}
+#entityboseman #pseudo span {
+  font-weight: bold;
+  color: #021740;
+}
+#entityboseman img {
+  width: 509px;
+  height: 435px;
+}
+#entityboseman img:hover {
+  width: 692px;
+  height: 591px;
+}
+
+#name {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.viex {
+  background-color: #07338C;
+  color: #ffffff;
+  padding: 1% 2%;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-weight: lighter;
+}
+
+#forml {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("/Illustration-Logo/1_Landing_page/Pantherhome4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+form {
+  text-align: center;
+  width: 50%;
+  padding: 2% 4%;
+  border-radius: 40px;
+  background-image: linear-gradient(180deg, #ffffff 25%, rgba(255, 255, 255, 0.3490196078) 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form p, form span {
+  text-align: center;
+  color: #021740;
+}
+form span {
+  font-weight: bold;
+}
+form button {
+  margin-top: 2%;
+  color: #021740;
+}
+form textarea {
+  color: #021740;
+}
+
+span {
+  font-family: "Cantarell";
+}
+
+/*# sourceMappingURL=landing.css.map */

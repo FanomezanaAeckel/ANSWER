@@ -1,0 +1,213 @@
+@import "./lib/All/init.scss";
+@import  './lib/All/font.scss';
+@import './lib/All/Footer.scss';
+@import './lib/All/nav.scss';
+body{
+    overflow-x: hidden;
+}
+
+// ------------------------- Section DESCRIPTION--------------------------------
+#firstView{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // border: 1px solid red;
+    section:nth-child(2){
+        overflow-x: hidden;
+        background-color: $mediumblack-color;
+        width: 450vw;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        button{
+            position: absolute;
+            right: 0;
+            padding: 0;
+            width: 3%; 
+            border-radius: 100%;
+            background-color: $darkblue-color;
+            color: $mediumblack-color;
+            font-size: larger;
+            transform: translate(0,115px);
+        }
+            .Imgslider{
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row nowrap;
+                height: 100%;
+                img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width:60%;
+                    height:100%;
+                }
+                .DescriptionPersonnage{
+                    width: 100%;
+                    padding: 1em 0.8em 0;
+                    p,span{
+                        font-size: 12px;
+                        text-align: justify;
+                        color: $white-color;
+                        font-weight: light;
+                    }
+                    h2{
+                        font-weight: light;
+                        text-align: left;
+                    }
+                }
+            } 
+    }
+}
+#overview{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    #annonce{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        gap: 1em;
+        padding-left: 5%;
+    }
+    #imgView{
+        width:70%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width:100% ;
+            height: 100%;
+        }
+    }
+
+}
+
+// ---------------------------------- Section Story ---------------------------------
+#story{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10% 0;
+    height: max-content;
+    gap: 3em;
+}
+#storyofpanther{
+    width: 80%;
+    .articlewakanda{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2{
+            font-size: 16px;
+            line-height: 2;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+#entityboseman{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // biographie chadwick boseman
+    #pseudo{
+        background-color: $white-color;
+        border-radius: 20px;
+        padding: 0 12% 25%;
+        p{
+            font-size: 14px;
+            font-family: "Cantarell";
+            line-height: 1.5;
+            color: $mediumblack-color;
+        }
+        img{
+            width: 374px;
+            height: 527 px;
+            &:hover{
+                width: 450px;
+                height: 634px;
+            }
+        }
+        span{
+            font-weight: bold;
+            color: $mediumblack-color;
+        }
+    }
+    img{
+        width: 509px;
+        height: 435px;
+        &:hover{
+            width: 692px;
+            height: 591px;
+        }
+    }    
+}
+// elementbiographi
+#name{
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+#span{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.viex{
+    background-color: $darkblue-color;
+    color: $white-color;
+    padding: 1% 2%;
+    margin: 0 auto;
+    border-radius:5px;
+    font-weight: lighter;
+}
+
+// -------------------- Section special form ------------------------
+#forml{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('/Illustration-Logo/1_Landing_page/Pantherhome4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+form{
+    text-align: center;
+    width: 50%;
+    padding: 2% 4%;
+    border-radius: 40px;
+    background-image: linear-gradient(180deg,$white-color 25%, #ffffff59 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p,span{
+        text-align: center;
+        color: $mediumblack-color;
+    }
+    span{
+        font-weight: bold;
+    }
+    button{
+        margin-top: 2%;
+        color: $mediumblack-color;
+    }
+    textarea{
+        color: $mediumblack-color;
+
+    }
+}
+span{
+    font-family: 'Cantarell';
+}
