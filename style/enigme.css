@@ -276,7 +276,7 @@ nav ul {
   margin: 2% 0;
 }
 .enigme3 form {
-  display: nl;
+  display: block;
 }
 .enigme3 form input, .enigme3 form textarea {
   background-color: transparent;
