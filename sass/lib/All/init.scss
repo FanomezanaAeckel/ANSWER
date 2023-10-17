@@ -1,52 +1,94 @@
 // ------------------------------------------- INITIALISATION VARIABLES --------------------------------------
-$white-color:#ffffff;
-$lightpink-color:#F2CEF2;
-$lightgrey-color:#9E91B7 ;
-$darkpink-color:#DF99F2;
-$darkpurple-color:#3D2DA6;
-$darkblue-color:#07338C;
-$mediumblack-color:#021740;
+$white-color: #ffffff;
+$lightpink-color: #f2cef2;
+$lightgrey-color: #9e91b7;
+$darkpink-color: #df99f2;
+$darkpurple-color: #3d2da6;
+$darkblue-color: #07338c;
+$mediumblack-color: #021740;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: $white-color;
-    text-align: justify;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $white-color;
+  text-align: justify;
 }
-body{
-    font-size: 30px;
-    background-image: radial-gradient(#021740 5%,#150938 50%,#160e27 70%, );
-    
+body {
+  font-size: 30px;
+  background-image: radial-gradient(#021740 5%, #150938 50%, #160e27 70%);
 }
-a{
-    text-decoration: none;
-    color: #fff;
-    &:hover{
-        text-decoration: underline;
-        color: $darkblue-color;
-    }
+a {
+  text-decoration: none;
+  color: #fff;
+  &:hover {
+    text-decoration: underline;
+    color: $darkblue-color;
+  }
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-.container{
-    width: 90%;
-    margin: 0 auto;
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
-input{
-    width:  520px;
-    height: 56px;
-   border-radius: 38px;
-   text-align: center;
+input {
+  width: 520px;
+  height: 56px;
+  border-radius: 38px;
+  text-align: center;
 }
-button{
-    width: 174px;
-    height: 54px;
-    border-radius: 38px;
-    text-align: center
+button {
+  width: 174px;
+  height: 54px;
+  border-radius: 38px;
+  text-align: center;
 }
-textarea{
-    @extend input;
-    height: 150px;
+textarea {
+  @extend input;
+  height: 150px;
+}
+@keyframes animate {
+  from {
+    transform: rotate(0);
+    transform: scaleX(0);
+  }
+  to {
+    transform: rotate(360deg);
+    transform: scaleX(1);
+  }
+}
+@keyframes desanimate {
+  from {
+    transform: rotate(0);
+    transform: scaleX(1);
+  }
+  to {
+    transform: rotate(-360deg);
+    transform: scaleX(0);
+  }
+}
+.desanimation {
+  animation-name: animate;
+  animation-duration: 0.8s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animation {
+  animation-name: animate;
+  animation-duration: 0.8s;
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+* {
+  @extend .fadeIn;
 }

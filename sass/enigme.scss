@@ -1,132 +1,161 @@
 @import "./lib/All/init.scss";
-@import  './lib/All/font.scss';
-@import './lib/All/Footer.scss';
-@import './lib/All/nav.scss';
+@import "./lib/All/font.scss";
+@import "./lib/All/Footer.scss";
+@import "./lib/All/nav.scss";
+@import "./lib/All/responsiveAll.scss";
+
 //  ------------------------- FIRST VIEW IN THE PAGE -----------------------------------------
-#h1{
-    font-family: 'BEYNO';
-    font-size: 63px;
+#h1 {
+  font-family: "BEYNO";
+  font-size: 63px;
 }
-#FirstView{
-    width: 100%;
-    height: 100vh;
-    background-image:url(/Illustration-Logo/3_Page_Enigme/Pantherenigme1.png) ;
+#FirstView {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Illustration-Logo/3_Page_Enigme/Pantherenigme1.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-around;
+  #withH2 {
+    width: 45%;
+    margin: 0 10%;
+  }
+}
+#withP {
+  width: 50%;
+  height: max-content;
+  margin: 0 10%;
+  padding: 0 5%;
+  background-image: url(/Illustration-Logo/3_Page_Enigme/Pantherenigme2.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  b p {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+#mainSec {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  #contentEnigme {
+    // display: flex;
+    // flex-direction: column;
+    width: 40%;
+    height: 60%;
+  }
+  #contentAnswer {
+    background-image: url(/Illustration-Logo/3_Page_Enigme/Pantherenigme2.png);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 120%;
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
-    justify-content: space-around;
-    #withH2{
-        width: 45%;
-        margin: 0 10%;
-    }
-}
-#withP{
-    width: 50%;
-    height: max-content;
-    margin: 0 10%;
-    padding: 0 5%;
-    background-image:url(/Illustration-Logo/3_Page_Enigme/Pantherenigme2.png) ;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    b
-    p{
-        font-size: 10px;
-        text-align: center;
-    }
-}
-      
-#mainSec{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    #contentEnigme{
-        // display: flex;
-        // flex-direction: column;
-        width: 40%;
-        height: 60%;
+    width: 35%;
+    height: 50%;
+    p {
+      font-size: 10px;
+      text-align: center;
     }
-    #contentAnswer{
-        background-image:url(/Illustration-Logo/3_Page_Enigme/Pantherenigme2.png) ;
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: 120%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 35%;
-        height: 50%;
-        p{
-            font-size: 10px;
-            text-align: center;
-        }
-    }
+  }
 }
-#h2Forever{
-    font-family: 'wakandaforever';
-    font-size: 20px;
+#h2Forever {
+  font-family: "wakandaforever";
+  font-size: 20px;
 }
-.enigme1{
+.enigme1 {
+  display: block;
+  transition: 0.5s;
+
+  h2 {
+    margin: 2% 0;
+  }
+  form {
     display: block;
-    h2{
-        margin: 2% 0;
+    input {
+      background-color: transparent;
     }
-    form{
-        display: block;
-        input{
-            background-color: transparent;
-        }
-        button{
-            margin: 10% 35%;
-            color: $mediumblack-color;
-        }   
+    #firstBtn {
+      @extend button;
+      margin: 10% 35%;
+      color: $mediumblack-color;
+      background-color: #fff;
     }
-    p{
-        margin-bottom: 3%;
-    }
+  }
+  p {
+    margin-bottom: 3%;
+  }
 }
-.enigme2{
-    display: none;
-    h2{
-        margin: 2% 0;
+.enigme2 {
+  display: none;
+  transition: 0.5s;
+
+  h2 {
+    margin: 2% 0;
+  }
+  form {
+    display: block;
+    input {
+      background-color: transparent;
     }
-    form{
-        display: block;
-        input{
-            background-color: transparent;
-        }
-        button{
-            margin: 10% 35%;
-            color: $mediumblack-color;
-        }   
+    #thenBtn {
+      @extend button;
+      margin: 10% 35%;
+      color: $mediumblack-color;
+      background-color: #fff;
     }
-    p{
-        margin-bottom: 3%;
-    }
+  }
+  p {
+    margin-bottom: 3%;
+  }
 }
-.enigme3{
-    display: none;
-    h2{
-        margin: 2% 0;
+.enigme3 {
+  display: none;
+  transition: 0.5s;
+
+  h2 {
+    margin: 2% 0;
+  }
+  form {
+    display: block;
+    input {
+      background-color: transparent;
     }
-    form{
-        display: block;
-        input{
-            background-color: transparent;
-        }
-        button{
-            margin: 10% 35%;
-            color: $mediumblack-color;
-        }   
+    #lastBtn {
+      @extend button;
+      margin: 10% 35%;
+      color: $mediumblack-color;
+      background-color: #fff;
     }
-    p{
-        margin-bottom: 3%;
-    }
+  }
+  p {
+    margin-bottom: 3%;
+  }
 }
+#enig1 {
+  span {
+    font-family: "wakandaforever";
+    font-size: large;
+  }
+}
+#contentEnigme {
+  h2 {
+    span {
+      font-family: "Algerian";
+      color: $darkpink-color;
+      font-weight: 400;
+    }
+  }
+}
+

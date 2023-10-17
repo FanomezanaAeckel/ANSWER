@@ -1,15 +1,14 @@
-nav{
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+  height: 18vh;
+  border: transparent;
+  ul {
+    font-family: "BEYNO";
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 18vh;
-    font-family: 'BEYNO';
-    border: transparent;
-    ul{
-        display: flex;
-        justify-content: space-between;
-        gap: 2em;
-        font-size: large;
-        width: 25%;
-    }
+    gap: 2em;
+    font-size: large;
+    width: 25%;
+  }
 }

@@ -17,7 +17,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #07338C;
+  color: #07338c;
 }
 
 li {
@@ -47,6 +47,49 @@ textarea {
   height: 150px;
 }
 
+@keyframes animate {
+  from {
+    transform: rotate(0);
+    transform: scaleX(0);
+  }
+  to {
+    transform: rotate(360deg);
+    transform: scaleX(1);
+  }
+}
+@keyframes desanimate {
+  from {
+    transform: rotate(0);
+    transform: scaleX(1);
+  }
+  to {
+    transform: rotate(-360deg);
+    transform: scaleX(0);
+  }
+}
+.desanimation {
+  animation-name: animate;
+  animation-duration: 0.8s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animation {
+  animation-name: animate;
+  animation-duration: 0.8s;
+}
+
+.fadeIn, * {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
 @font-face {
   font-family: "BEYNO";
   src: url("/police/BEYNO.ttf");
@@ -66,13 +109,13 @@ textarea {
 h1 {
   font-size: 68px;
   font-family: "Panthera";
-  color: #F2CEF2;
+  color: #f2cef2;
 }
 
 h2 {
   font-size: 32px;
   font-family: "BEYNO";
-  color: #DF99F2;
+  color: #df99f2;
 }
 
 p, footer {
@@ -145,19 +188,62 @@ footer p {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 1em;
   height: 18vh;
-  font-family: "BEYNO";
   border: transparent;
 }
 nav ul {
+  font-family: "BEYNO";
   display: flex;
-  justify-content: space-between;
   gap: 2em;
   font-size: large;
   width: 25%;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  nav {
+    padding: 0.5em;
+  }
+  nav ul {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: max-content;
+  }
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3) {
+    display: none;
+  }
+  nav ul:hover li:nth-child(2),
+  nav ul:hover li:nth-child(3) {
+    display: flex;
+    gap: 0.2em;
+  }
+  footer {
+    padding: 2em;
+  }
+  footer img {
+    width: 35%;
+  }
+  button {
+    width: 80px;
+    height: 40px;
+    font-size: 11px;
+  }
+  input, textarea {
+    width: 100%;
+  }
+  .container {
+    width: 100vh;
+    margin: 0 auto;
+  }
+}
 #ViewSection {
   width: 100%;
   height: 100vh;
